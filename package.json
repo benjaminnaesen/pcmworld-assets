@@ -1,0 +1,19 @@
+{
+  "name": "pcmworld-assets_nodejs_2020",
+  "version": "0.0.0",
+  "description": "Assets for Pro Cycling Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminnaesen/pcmworld-assets.git"
+  },
+  "author": "Benjamin Naesen <benji@naesen.be>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminnaesen/pcmworld-assets/issues"
+  },
+  "homepage": "https://github.com/benjaminnaesen/pcmworld-assets#readme"
+}
