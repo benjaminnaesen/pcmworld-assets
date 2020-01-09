@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+    container_name: pcmworld-assets_nodejs_2020
+    command: ../node_modules/.bin/nodemon
+    ports:
+      # App port
+      - 5000:5000
+    volumes:
+      # Delegated option for faster mounted volumes
+      - .:/app:delegated
+      # Because `npm install`
+      - ./package.json:/package.json
+      - ./package-lock.json:/package-lock.json
+      # Block local modules
+      - notused:/app/node_modules
+    links:
+      - mongo
+  mongo:
+    container_name: pcmworld-assets_mongo_2020
+    image: mongo
+    ports:
+      - "27017:27017"
+volumes:
+  notused:

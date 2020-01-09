@@ -2,7 +2,7 @@
   "name": "pcmworld-assets_nodejs_2020",
   "version": "0.0.0",
   "description": "Assets for Pro Cycling Manager",
-  "main": "index.js",
+  "main": "server/app.ts",
   "scripts": {
     "start": "node dist/app.js",
     "dev": "nodemon server/app.ts",
@@ -27,6 +27,7 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.8.6"
   }
 }
